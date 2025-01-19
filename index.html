@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>CRUDS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <h1>all products: </h1>
+            <div class="buttons">
+                <button class="add-btn"><i class="fa-solid fa-plus"></i>add new product</button>
+                <button class="delete-btn"><i class="fa-solid fa-trash"></i>delete all</button>
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Search by name or category..." />
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>price</th>
+                    <th>tax</th>
+                    <th>ads</th>
+                    <th>discount</th>
+                    <th>total</th>
+                    <th>category</th>
+                    <th>update</th>
+                    <th>delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"> 
+            </tbody>
+        </table>
+        
+    </div>
+
+    <div class="modal">
+        <div class="modal-body">
+            <i class="fa-solid fa-x close"></i>
+            <div class="input-group">
+                <label for="title">name</label>
+                <input type="text" name="title" id="title" />
+            </div>
+            <div class="input-group">
+                <label for="price">price</label>
+                <input type="number" name="price" id="price" />
+            </div>
+            <div class="input-group">
+                <label for="tax">tax</label>
+                <input type="number" name="tax" id="tax" />
+            </div>
+            <div class="input-group">
+                <label for="ads">ads</label>
+                <input type="number" name="ads" id="ads" />
+            </div>
+            <div class="input-group">
+                <label for="discount">discount</label>
+                <input type="number" name="discount" id="discount" />
+            </div>
+            <div class="input -group">
+                <label for="count">count</label>
+                <input type="number" name="count" id="count" />
+            </div>
+            <div class="input-group">
+                <label for="category">category</label>
+                <input type="text" name="category" id="category" />
+            </div>
+            <div class="buttons">
+                <button class="add-btn">add</button>
+                <button class="update-btn">update</button>
+                <button class="delete-btn">delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
